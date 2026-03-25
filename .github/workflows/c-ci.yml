@@ -46,6 +46,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
+          file: ./Dockerfile
           images: ${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value=latest
