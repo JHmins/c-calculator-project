@@ -1,4 +1,4 @@
-# 1´Ü°è: ºôµå ½ºÅ×ÀÌÁö
+# 1ë‹¨ê³„: ë¹Œë“œ ìŠ¤í…Œì´ì§€
 FROM ubuntu:24.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -18,7 +18,7 @@ COPY Makefile ./
 RUN make
 RUN make test
 
-# 2´Ü°è: ½ÇÇà ½ºÅ×ÀÌÁö
+# 2ë‹¨ê³„: ì‹¤í–‰ ìŠ¤í…Œì´ì§€
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
